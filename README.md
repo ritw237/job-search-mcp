@@ -24,6 +24,15 @@ python3 search.py "business analyst"
 python3 search.py "cloud engineer"
 ```
 
+Screenshots:
+CLI:
+<img width="1681" height="735" alt="image" src="https://github.com/user-attachments/assets/711f1207-2c8a-4a2c-a758-894ecc4f075d" />
+
+Chatting through Claude Desktop app:
+<img width="623" height="818" alt="image" src="https://github.com/user-attachments/assets/861b714b-a344-4032-aeeb-de985f467c17" />
+
+
+
 Also works as an MCP server (`python3 server.py`) for any MCP-compatible client.
 
 ## how this got built
