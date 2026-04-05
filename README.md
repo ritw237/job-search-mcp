@@ -30,10 +30,10 @@ Also works as an MCP server (`python3 server.py`) for any MCP-compatible client.
 
 Started by trying to scrape Naukri.com for Indian job listings. Didn't go well:
 
-1. **httpx + BeautifulSoup** — Naukri is a Next.js app, so httpx got an empty HTML shell with `jobDetails: []`. The actual jobs load via JavaScript after page render.
-2. **Naukri's internal API** (`/jobapi/v3/search`) — returned `"recaptcha required"` with a 406 status.
-3. **Playwright with headless Chromium** — Akamai bot detection returned "Access Denied" before the page even loaded.
-4. **Himalayas public API** — free, no auth, 100K+ listings, clean JSON. Done in 20 lines.
+1. **httpx + BeautifulSoup** -> Naukri is a Next.js app, so httpx got an empty HTML shell with `jobDetails: []`. The actual jobs load via JavaScript after page render.
+2. **Naukri's internal API** (`/jobapi/v3/search`) -> returned `"recaptcha required"` with a 406 status.
+3. **Playwright with headless Chromium** -> Akamai bot detection returned "Access Denied" before the page even loaded.
+4. **Himalayas public API** -> free, no auth, 100K+ listings, clean JSON. Done in 20 lines.
 
 Lesson: don't fight bot detection for a portfolio project. Find a public API.
 
